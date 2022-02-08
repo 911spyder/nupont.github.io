@@ -1,14 +1,86 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/mzboewaa",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
 <head>
     <title>nupont.</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+    -->
     <link href="css/layout.css" rel="stylesheet" media="screen" />
 </head>
 
-<body bgcolor=3b3b3b>
-    <p><img src="nupont.001.png" width="100%" alt="nupont." /></p>
+
+<body class="avenir fw2">
+    <header>
+        <div class="flex-container row-reverse" >
+            <div class="flex-item">
+                <a href="index-de.html">DE</a> 
+            </div>
+        </div>
+    </header>
+    <main class="morepadding maxwidth">
+        <div class="logo">  
+            <p><img src="nupont_white_transp.png" width="100%" alt="nupont."/></p>
+        </div>
+        
+        <div class="flex-container column">
+            <section class="flex-item">
+                <H1>Stealth Mode</H1> 
+                <p>nupont.io is operating in Stealth mode currently. If you would like to work with us, please do not
+                    hesitate to contact us via the chat icon at the bottom right.</p>
+            </section>
+        </div>
+        
+    
+    </main>
+    <footer>
+        <div class="flex-container row">
+            <p class="flex-item">
+                <a href="imprint.html">Imprint</a> </p>
+            <p class="flex-item">
+                <a href="dataprotection.html">Dataprotection</a>
+            </p>
+            <p class="flex-item">
+                <a href="http://www.jalingo.de">© 2022 Jalingo Management UG</a>
+            </p>
+
+        </div>
+    </footer>
 </body>
 
 </html>
