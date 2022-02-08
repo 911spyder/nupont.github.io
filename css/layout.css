@@ -1,17 +1,331 @@
 @charset "utf-8";
-{padding:0;
-margin:0;
-}/* CSS Document */
 
 body {
 
-background-position: center top;
-background-repeat:repeat-y;
-background-color:#3b3b3b;
-font-family: open-sans, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+    background-position: center top;
+    background-repeat:no-repeat;
+    background-color:#3b3b3b;
+    font-family: open-sans, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(black, #3b3b3b);
 
-* {
-margin:0;
-padding:0;
-
+    display: flex;
+    min-height: 100vh;
+    /*margin:  auto;*/
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    color: white; 
+    
 }
+
+main{
+    flex:1
+}
+
+.morepadding { 
+    padding-left: 2rem;
+    padding-right: 2rem;    
+}
+
+.maxwidth{
+    max-width: 1300px
+}
+/*section {
+    min-height: 5em;
+    flex: 1;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 1.5rem 0 2rem 0;
+    justify-content: flex-start;
+    border: 2px dotted;
+  }
+*/
+/*.innen {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 1.5rem 0 2rem 0;
+    color: white; 
+    flex-direction: column;
+    justify-content: left;
+  }
+*/
+.logo {
+    margin: 4%;
+    /*border: 5px solid white;*/
+  }
+
+  /*header .innen, 
+  .brand, .footer, .innen, 
+  .portfolio, .section, .logo {
+    display: flex;
+    justify-content: space-between;
+  }
+*/
+
+a {color: white; text-decoration: none; font-weight: 300;}
+h1 {color: #F5F5F7;font-weight: 500;}
+h2 {color: #D5D5D5;font-weight: 500;}
+
+
+.flex-container {
+	display: flex;
+    
+}
+
+.flex-item {
+	/*flex: auto;*/
+	/*border: 1px solid;*/
+	margin: .3em;
+	padding: .5em;
+	/*background: #3b3b3b;*/
+}
+
+p.flex-item {
+	font-weight: bold;
+	text-align: center;
+}
+
+.row {
+	flex-direction: row;
+}
+
+.row-reverse {
+	flex-direction: row-reverse;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.white {
+    background: whitesmoke;
+    color: black;
+}
+
+footer {
+	background-color: #3b3b3b;
+	/*border: 1px solid #e7c157;
+	border-radius: 0 .5rem .5rem;*/
+	margin: 1rem;
+	padding: 1rem;
+}
+
+/*
+
+   FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
+
+*/
+
+.sans-serif {
+    font-family: -apple-system, BlinkMacSystemFont,
+                 'avenir next', avenir,
+                 'helvetica neue', helvetica,
+                 ubuntu,
+                 roboto, noto,
+                 'segoe ui', arial,
+                 sans-serif;
+  }
+  
+  .serif {
+    font-family: georgia,
+                 times,
+                 serif;
+  }
+  
+  .system-sans-serif {
+    font-family: sans-serif;
+  }
+  
+  .system-serif {
+    font-family: serif;
+  }
+  
+  /* Monospaced Typefaces (for code) */
+  
+  /* From http://cssfontstack.com */
+  
+  code, .code {
+    font-family: Consolas,
+                 monaco,
+                 monospace;
+  }
+  
+  .courier {
+    font-family: 'Courier Next',
+                 courier,
+                 monospace;
+  }
+  
+  /* Sans-Serif Typefaces */
+  
+  .helvetica {
+    font-family: 'helvetica neue', helvetica,
+                 sans-serif;
+  }
+  
+  .avenir {
+    font-family: 'avenir next', avenir,
+                 sans-serif;
+  }
+  
+  /* Serif Typefaces */
+  
+  .athelas {
+    font-family: athelas,
+                 georgia,
+                 serif;
+  }
+  
+  .georgia {
+    font-family: georgia,
+                 serif;
+  }
+  
+  .times {
+    font-family: times,
+                 serif;
+  }
+  
+  .bodoni {
+    font-family: "Bodoni MT",
+                  serif;
+  }
+  
+  .calisto {
+    font-family: "Calisto MT",
+                  serif;
+  }
+  
+  .garamond {
+    font-family: garamond,
+                 serif;
+  }
+  
+  .baskerville {
+    font-family: baskerville,
+                 serif;
+  }
+  
+  /*
+  
+     FONT STYLE
+     Docs: http://tachyons.io/docs/typography/font-style/
+  
+     Media Query Extensions:
+       -ns = not-small
+       -m  = medium
+       -l  = large
+  
+  */
+  
+  .i         { font-style: italic; }
+  
+  .fs-normal { font-style: normal; }
+  
+  @media screen and (min-width: 30em) {
+    .i-ns       { font-style: italic; }
+    .fs-normal-ns     { font-style: normal; }
+  }
+  
+  @media screen and (min-width: 30em) and (max-width: 60em) {
+    .i-m       { font-style: italic; }
+    .fs-normal-m     { font-style: normal; }
+  }
+  
+  @media screen and (min-width: 60em) {
+    .i-l       { font-style: italic; }
+    .fs-normal-l     { font-style: normal; }
+  }
+  
+  /*
+  
+     FONT WEIGHT
+     Docs: http://tachyons.io/docs/typography/font-weight/
+  
+     Base
+       fw = font-weight
+  
+     Modifiers:
+       1 = literal value 100
+       2 = literal value 200
+       3 = literal value 300
+       4 = literal value 400
+       5 = literal value 500
+       6 = literal value 600
+       7 = literal value 700
+       8 = literal value 800
+       9 = literal value 900
+  
+     Media Query Extensions:
+       -ns = not-small
+       -m  = medium
+       -l  = large
+  
+  */
+  
+  .normal { font-weight: normal; }
+  
+  .b      { font-weight: bold; }
+  
+  .fw1    { font-weight: 100; }
+  
+  .fw2    { font-weight: 200; }
+  
+  .fw3    { font-weight: 300; }
+  
+  .fw4    { font-weight: 400; }
+  
+  .fw5    { font-weight: 500; }
+  
+  .fw6    { font-weight: 600; }
+  
+  .fw7    { font-weight: 700; }
+  
+  .fw8    { font-weight: 800; }
+  
+  .fw9    { font-weight: 900; }
+  
+  @media screen and (min-width: 30em) {
+    .normal-ns { font-weight: normal; }
+    .b-ns      { font-weight: bold; }
+    .fw1-ns    { font-weight: 100; }
+    .fw2-ns    { font-weight: 200; }
+    .fw3-ns    { font-weight: 300; }
+    .fw4-ns    { font-weight: 400; }
+    .fw5-ns    { font-weight: 500; }
+    .fw6-ns    { font-weight: 600; }
+    .fw7-ns    { font-weight: 700; }
+    .fw8-ns    { font-weight: 800; }
+    .fw9-ns    { font-weight: 900; }
+  }
+  
+  @media screen and (min-width: 30em) and (max-width: 60em) {
+    .normal-m { font-weight: normal; }
+    .b-m      { font-weight: bold; }
+    .fw1-m    { font-weight: 100; }
+    .fw2-m    { font-weight: 200; }
+    .fw3-m    { font-weight: 300; }
+    .fw4-m    { font-weight: 400; }
+    .fw5-m    { font-weight: 500; }
+    .fw6-m    { font-weight: 600; }
+    .fw7-m    { font-weight: 700; }
+    .fw8-m    { font-weight: 800; }
+    .fw9-m    { font-weight: 900; }
+  }
+  
+  @media screen and (min-width: 60em) {
+    .normal-l { font-weight: normal; }
+    .b-l      { font-weight: bold; }
+    .fw1-l    { font-weight: 100; }
+    .fw2-l    { font-weight: 200; }
+    .fw3-l    { font-weight: 300; }
+    .fw4-l    { font-weight: 400; }
+    .fw5-l    { font-weight: 500; }
+    .fw6-l    { font-weight: 600; }
+    .fw7-l    { font-weight: 700; }
+    .fw8-l    { font-weight: 800; }
+    .fw9-l    { font-weight: 900; }
+  }
+  
+  
