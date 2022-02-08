@@ -87,6 +87,7 @@ p.flex-item {
 
 .row {
 	flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .row-reverse {
